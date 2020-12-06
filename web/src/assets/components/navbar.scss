@@ -1,0 +1,116 @@
+.navbar {
+  height: 70px;
+  .nav-container {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 68px;
+    font-size: 14px;
+    z-index: 2;
+    padding: 0 60px;
+    transition: background-color .4s;
+    a.logo-sm {
+      text-decoration: none;
+      font-size: 1.8em;
+      color: #ff000d;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 25px;
+      cursor: pointer;
+    }
+    .menu-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      list-style: none;
+      .nav-menu {
+        display: none;
+      }
+      .nav-tab {
+        display: block;
+        margin-left: 20px;
+        list-style-type: none;
+        font-size: 14px;
+        a {
+          position: relative;
+          color: #e5e5e5;
+          transition: color .4s;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          height: 100%;
+          &.active {
+            color: #fff;
+            font-weight: 700;
+            cursor: default;
+          }
+        }
+      }
+    }
+    .r-navigation {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: flex-end;
+      position: absolute;
+      height: 100%;
+      right: 60px;
+      top: 0;
+      .nav-elem {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        .search-button {
+          display: flex;
+          font-size: 1.3em;
+          cursor: pointer;
+          border: none;
+          background: 0 0;
+          padding:0 6px;
+        }
+        .notification-button {
+          display: flex;
+          font-size: 1.3em;
+          cursor: pointer;
+          border: none;
+          background: 0 0;
+          padding:0 6px;
+        }
+        .account-menu {
+          .account-dropdown {
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            a {
+              display: block;
+              z-index: -1;
+              position: relative;
+              .profile-link {
+                display: flex;
+                align-items: center;
+                .profile-icon {
+                  vertical-align: middle;
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 4px;
+                }
+              }
+            }
+            .caret {
+              margin-left: 10px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 5px 5px 0 5px;
+              border-color: #fff transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

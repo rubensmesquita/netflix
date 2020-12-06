@@ -1,0 +1,21 @@
+[class*=" icon-"], [class^=icon-] {
+  font-family: 'nf-icon';
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  transform: translateZ(0);
+}
+
+.icon-logo-sm:before {
+  content: '\e5d0';
+}
+
+.icon-search:before {
+  content: '\e636';
+}
+
+.icon-notification:before {
+  content: '\e663';
+}
